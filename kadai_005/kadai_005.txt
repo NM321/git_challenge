@@ -1,0 +1,19 @@
+(base) appurunoMacBook-Pro:git-basic-kadai apple$ mkdir git_challenge
+(base) appurunoMacBook-Pro:git-basic-kadai apple$ cd git_challenge
+(base) appurunoMacBook-Pro:git_challenge apple$ git init
+Initialized empty Git repository in /Users/apple/Desktop/Samurai_kadai/git-basic-kadai/git_challenge/.git/
+(base) appurunoMacBook-Pro:git_challenge apple$ touch hello_world.txt
+(base) appurunoMacBook-Pro:git_challenge apple$ echo 'Hello, world!' >> hello_world.txt
+(base) appurunoMacBook-Pro:git_challenge apple$ git add .
+(base) appurunoMacBook-Pro:git_challenge apple$ git commit -m "hello_world.txtを追加"
+[main (root-commit) 9cc36e7] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+(base) appurunoMacBook-Pro:git_challenge apple$ echo 'こんにちは、世界！' >> hello_world.txt
+(base) appurunoMacBook-Pro:git_challenge apple$ git add .
+(base) appurunoMacBook-Pro:git_challenge apple$ git commit -m "日本語訳を追記"
+[main df79bd3] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+(base) appurunoMacBook-Pro:git_challenge apple$ git log --oneline
+df79bd3 (HEAD -> main) 日本語訳を追記
+9cc36e7 hello_world.txtを追加
